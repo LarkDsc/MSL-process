@@ -1,218 +1,107 @@
-\# MSL Process
-
-
+# MSL Process
 
 Sistema de Análisis de Imágenes Médicas - Radiómicas y Estadísticas
 
+## Instalación Rápida
 
-
-<<<<<<< HEAD
-\##  Instalación Rápida
-=======
-\## Instalación Rápida
->>>>>>> 3f1e1ee1fb38dfe519b0736732ac2389ed5767a0
-
-
-
-\### Windows (Escritorio)
-
+### Windows (Escritorio)
 ```powershell
-
-\# Como administrador
-
-cd MSL\_Process\_Installer\\installers\\desktop
-
-.\\install-windows.ps1
-
+# Como administrador
+cd MSL_Process_Installer\installers\desktop
+.\install-windows.ps1
 ```
 
-
-
-\### Linux (Escritorio)
-
+### Linux (Escritorio)
 ```bash
-
-cd MSL\_Process\_Installer/installers/desktop
-
+cd MSL_Process_Installer/installers/desktop
 sudo bash install-linux.sh
-
 ```
 
-
-
-\### Ubuntu Server (Red Local)
-
+### Ubuntu Server (Red Local)
 ```bash
-
-cd MSL\_Process\_Installer/installers/server
-
+cd MSL_Process_Installer/installers/server
 sudo bash install-ubuntu-server.sh
-
 ```
 
+## Requisitos
 
+- **Julia** 1.9+ ([Descargar](https://julialang.org/downloads/))
+- **Node.js** 18+ LTS ([Descargar](https://nodejs.org/))
+- **RAM:** Mínimo 4 GB (recomendado 8 GB)
+- **Disco:** 2 GB libres
 
-\## Requisitos
+## Uso - Modo Escritorio
 
+1. Doble clic en **"MSL Process"** en el Escritorio
+2. Se abrirá automáticamente en el navegador
+3. Para cerrar: Ctrl+C en la terminal
 
-
-\- \*\*Julia\*\* 1.9+ (\[Descargar](https://julialang.org/downloads/))
-
-\- \*\*Node.js\*\* 18+ LTS (\[Descargar](https://nodejs.org/))
-
-\- \*\*RAM:\*\* Mínimo 4 GB (recomendado 8 GB)
-
-\- \*\*Disco:\*\* 2 GB libres
-
-
-
-\## Uso - Modo Escritorio
-
-
-
-1\. Doble clic en \*\*"MSL Process"\*\* en el Escritorio
-
-2\. Se abrirá automáticamente en el navegador
-
-3\. Para cerrar: Ctrl+C en la terminal
-
-
-
-\*\*O desde terminal:\*\*
-
+**O desde terminal:**
 ```bash
-
 cd launcher
-
 node launcher-desktop.js
-
 ```
 
-
-
-\## Uso - Modo Servidor
-
-
+## Uso - Modo Servidor
 
 El servidor inicia automáticamente como servicio systemd.
 
-
-
-\*\*Ver estado:\*\*
-
+**Ver estado:**
 ```bash
-
 sudo systemctl status msl-process
-
 ```
 
-
-
-\*\*Acceso desde otros dispositivos:\*\*
-
+**Acceso desde otros dispositivos:**
+```
+http://[IP-DEL-SERVIDOR]:3000
 ```
 
-http://\[IP-DEL-SERVIDOR]:3000
-
+## Estructura del Proyecto
 ```
-
-
-
-\## Estructura del Proyecto
-
-```
-
-MSL\_Process\_Installer/
-
+MSL_Process_Installer/
 ├── backend/          # Servidor Julia
-
 ├── frontend/         # Aplicación React
-
 ├── launcher/         # Scripts de inicio
-
 └── installers/       # Instaladores automáticos
-
 ```
 
+## Solución de Problemas
 
-
-\## Solución de Problemas
-
-
-
-\### Julia no inicia
-
+### Julia no inicia
 ```bash
-
 julia -t auto backend/server.jl
-
 ```
 
-
-
-\### Puerto ocupado
-
+### Puerto ocupado
 Cambia los puertos en `server.jl` y `App.js`
 
-
-
-\### Firewall bloquea conexiones
-
+### Firewall bloquea conexiones
 ```bash
-
-\# Windows
-
+# Windows
 netsh advfirewall firewall add rule name="MSL Process" dir=in action=allow protocol=TCP localport=8000,3000
 
-
-
-\# Linux
-
+# Linux
 sudo ufw allow 8000/tcp
-
 sudo ufw allow 3000/tcp
-
 ```
 
+## Características
 
+- Visualización de imágenes NIfTI y DICOM
+- Análisis radiómico (100+ features)
+- Análisis estadístico paramétrico/no paramétrico
+- Procesamiento paralelo
+- Exportación a Excel
 
-\## Características
-
-
-
-\- Visualización de imágenes NIfTI y DICOM
-
-\- Análisis radiómico (100+ features)
-
-\- Análisis estadístico paramétrico/no paramétrico
-
-\- Procesamiento paralelo
-
-\- Exportación a Excel
-
-
-
-\## Licencia
-
-
+## Licencia
 
 MIT License - Ver LICENSE para detalles
 
+## Reportar Problemas
 
-
-\## Reportar Problemas
-
-
-
-GitHub Issues: \[tu-repo-url]/issues
-
-
+GitHub Issues: [LarkDsc]/issues
 
 ---
 
-
-
-\*\*Desarrollado por:\*\* MSL Process Team  
-
-\*\*Versión:\*\* 1.0.0
-
+**Desarrollado por: Laboratior de Fisica Medica FCFM BUAP y LarkDsc**  
+**Versión:** 1.0.0
