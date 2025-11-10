@@ -1,0 +1,32 @@
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# React builds
+frontend/build/
+frontend/build-server/
+frontend/.env
+
+# Julia
+backend/Manifest.toml
+backend/.julia/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temporal
+*.tmp
+*.temp
+TEMP_DIR/
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
