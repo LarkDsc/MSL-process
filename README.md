@@ -6,7 +6,7 @@ Sistema de Análisis de Imágenes Médicas - Radiómicas y Estadísticas
 
 
 
-\## 🚀 Instalación Rápida
+\##  Instalación Rápida
 
 
 
@@ -48,7 +48,7 @@ sudo bash install-ubuntu-server.sh
 
 
 
-\## 📋 Requisitos
+\## Requisitos
 
 
 
@@ -62,7 +62,7 @@ sudo bash install-ubuntu-server.sh
 
 
 
-\## 🖥️ Uso - Modo Escritorio
+\## Uso - Modo Escritorio
 
 
 
@@ -86,7 +86,7 @@ node launcher-desktop.js
 
 
 
-\## 🌐 Uso - Modo Servidor
+\## Uso - Modo Servidor
 
 
 
@@ -114,7 +114,7 @@ http://\[IP-DEL-SERVIDOR]:3000
 
 
 
-\## 📁 Estructura del Proyecto
+\## Estructura del Proyecto
 
 ```
 
@@ -132,7 +132,7 @@ MSL\_Process\_Installer/
 
 
 
-\## 🔧 Solución de Problemas
+\## Solución de Problemas
 
 
 
@@ -172,23 +172,23 @@ sudo ufw allow 3000/tcp
 
 
 
-\## 📊 Características
+\## Características
 
 
 
-\- ✅ Visualización de imágenes NIfTI y DICOM
+\- Visualización de imágenes NIfTI y DICOM
 
-\- ✅ Análisis radiómico (100+ features)
+\- Análisis radiómico (100+ features)
 
-\- ✅ Análisis estadístico paramétrico/no paramétrico
+\- Análisis estadístico paramétrico/no paramétrico
 
-\- ✅ Procesamiento paralelo
+\- Procesamiento paralelo
 
-\- ✅ Exportación a Excel
+\- Exportación a Excel
 
 
 
-\## 📝 Licencia
+\## Licencia
 
 
 
@@ -196,7 +196,7 @@ MIT License - Ver LICENSE para detalles
 
 
 
-\## 🐛 Reportar Problemas
+\## Reportar Problemas
 
 
 
