@@ -6,7 +6,11 @@ Sistema de Análisis de Imágenes Médicas - Radiómicas y Estadísticas
 
 
 
+<<<<<<< HEAD
 \##  Instalación Rápida
+=======
+\## Instalación Rápida
+>>>>>>> 3f1e1ee1fb38dfe519b0736732ac2389ed5767a0
 
 
 
