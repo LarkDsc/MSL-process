@@ -94,14 +94,13 @@ sudo ufw allow 3000/tcp
 - Exportación a Excel
 
 ## Licencia
-
-MIT License - Ver LICENSE para detalles
+ Ver LICENSE para detalles
 
 ## Reportar Problemas
 
-GitHub Issues: [LarkDsc]/issues
+GitHub Issues: *no disponible por el momento
 
 ---
 
-**Desarrollado por: Laboratior de Fisica Medica FCFM BUAP y LarkDsc**  
+**Desarrollado por: Laboratorio de Fisica Medica FCFM BUAP y LarkDsc**  
 **Versión:** 1.0.0
